@@ -1,0 +1,235 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script language="javascript" type="text/javascript" src="helpers/p5.js"></script>
+	<script language="javascript" type="text/javascript" src="helpers/p5.dom.js"></script>
+	<script language="javascript" type="text/javascript" src="helpers/p5.sound.js"></script>
+  <style> body {padding: 0; margin: 0;} </style>
+  <script>
+
+function preload(){
+
+first = loadImage("assets/first.png")
+second = loadImage("assets/second.png")
+third = loadImage("assets/third.png")
+fourth = loadImage("assets/fourth.png")
+fifth = loadImage("assets/fifth.png")
+sixth = loadImage("assets/sixth.png")
+seventh = loadImage("assets/seventh.png")
+
+color1 = loadImage("assets/colorone.png")
+color2 = loadImage("assets/colortwo.png")
+color3 = loadImage("assets/colorthree.png")
+color4 = loadImage("assets/colorfour.png")
+color5 = loadImage("assets/colorfive.png")
+color6 = loadImage("assets/colorsix.png")
+color7  = loadImage("assets/colorseven.png")
+
+
+	}
+
+
+function setup() {
+		createCanvas(windowWidth, windowHeight);
+		soundFormats('mp3');
+		nine01 = loadSound('assets/901.mp3');
+		gbody = loadSound('assets/g body.mp3');
+		nine64 = loadSound('assets/964.mp3');
+		nine93 = loadSound('assets/993.mp3');
+		nine96 = loadSound('assets/996.mp3');
+		nine97 = loadSound('assets/997.mp3');
+		nine91 = loadSound('assets/991.mp3');
+
+	}
+	
+
+function draw() {
+
+
+background("lightgrey");
+
+image(first, 50, 300);
+image(second, 210, 200);
+image(third, 420, 300);
+image(fourth, 600, 200);
+image(fifth, 800, 300);
+image(sixth, 950, 200);
+image(seventh, 1150, 300);
+
+
+
+//901
+if( mouseX > 50  && mouseX < 265 && mouseY > 300 && mouseY < 404 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine01.play();
+		noLoop();
+		image(color1, 50, 300);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+//G Body
+if( mouseX > 210  && mouseX < 453 && mouseY > 200 && mouseY < 507 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		gbody.play();
+		noLoop();
+		image(color2, 210, 200);
+		//image(green, 50, 300);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+//964
+if( mouseX > 420  && mouseX < 660 && mouseY > 300 && mouseY < 396 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine64.play();
+		noLoop();
+		image(color3, 420, 300);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+
+//993
+if( mouseX > 600  && mouseX < 830 && mouseY > 200 && mouseY < 304 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine93.play();
+		noLoop();
+		image(color4, 600, 200);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+
+//996
+if( mouseX > 800  && mouseX < 1033 && mouseY > 300 && mouseY < 400 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine96.play();
+		noLoop();
+		image(color5, 800, 300);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+
+
+//997
+if( mouseX > 950  && mouseX < 1159 && mouseY > 200 && mouseY < 301 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine97.play();
+		noLoop();
+		image(color6, 950, 200);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+
+
+
+
+//991
+if( mouseX > 1150  && mouseX < 1401 && mouseY > 300 && mouseY < 394 ){
+	hovering = true;
+	} else {
+		hovering = false;
+
+	}
+
+	if (hovering == true){
+		nine91.play();
+		noLoop();
+		image(color7, 1150, 300);
+		//do something
+	}
+
+	if (hovering == false){
+		
+	}
+
+
+
+}
+
+
+
+
+
+
+	</script>
+</head>
+
+<body>
+</body>
+</html>
